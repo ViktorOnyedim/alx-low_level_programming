@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - Prints a triangle
- *
+ * @size: params
  * Return: void.
  */
 
