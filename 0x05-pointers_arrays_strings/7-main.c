@@ -9,7 +9,8 @@ int main(void)
 {
 	char *str;
 
-	str = "0123456789";
+	/*str = "0123456789";*/
+	str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offi cia deserunt mollit anim id est laborum.";
 	puts_half(str);
 	return (0);
 }
