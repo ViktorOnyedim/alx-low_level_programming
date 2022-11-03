@@ -34,3 +34,4 @@ int _sqrt_recursion(int n)
 	if (n == 0)
 		return (0);
 	return (power_operation(n, 1));
+}
