@@ -3,5 +3,6 @@
 
 int _putchar(char c);
 int main(int argc, **argv);
+int main(int argc, **argv);
 
 #endif /* _MAIN_H */
