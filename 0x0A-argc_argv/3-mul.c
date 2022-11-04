@@ -14,12 +14,12 @@ int main(int argc, char **argv)
 {
 	int mul, count;
 
-	if (argc == 1 || argc > 3)
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	mul = 1;
 	for (count = 1; count < argc; count++)
 	{
