@@ -24,7 +24,7 @@ char *_strdup(char *str)
 
 	ptr = (char *)malloc(sizeof(char) * str_size + 1);
 
-	if (ptr == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	ptr_offset = ptr;
