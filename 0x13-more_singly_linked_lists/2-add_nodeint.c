@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * add_nodeint - adds a new node at the beginning of a listint_t list 
+ * add_nodeint - adds a new node at the beginning of a listint_t list
  * @head: pointer to head pointer
  * @n: integer
  *
@@ -22,6 +22,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	new_node->n = n;
 	new_node->next = *head;
 	*head = new_node;
-	return (new_node);
 
+	free(new_node);
+	return (new_node);
 }
