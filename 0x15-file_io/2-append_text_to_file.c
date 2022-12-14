@@ -18,9 +18,12 @@ int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	size_t count;
+	ssize_t len;
 
-	fd = open(filename, O_WRONLY | O_APPEND, 0600);
+	if (filename == NULL)
+		return (-1);
 
+	fd = open(filename, O_WRONLY | O_APPEND);
 	if (fd == -1)
 		return (-1);
 
@@ -28,8 +31,11 @@ int append_text_to_file(const char *filename, char *text_content)
 		;
 
 	if (text_content != NULL)
-		write(fd, text_content, count);
+		len = write(fd, text_content, count);
 
 	close(fd);
+
+	if(len == -1)
+		return (-1);
 	return (1);
 }
