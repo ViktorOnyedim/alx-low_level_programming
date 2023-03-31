@@ -1,0 +1,23 @@
+# Compiler
+CC = gcc
+
+# Source files
+SRC = main.c school.c
+
+# Object files
+OBJ = $(SRC:.c=.o)
+
+# Executable name
+NAME = school
+
+# Linking object files to create the executable
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Compiling object files and executable
+%.o: %.c
+	$(CC) -c $< -o $@
+
+# Cleaning object files and executable
+clean:
+	rm -f $(OBJ) $(NAME)
